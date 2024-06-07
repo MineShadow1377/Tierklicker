@@ -3,9 +3,7 @@ public class Frage {
   public Frage (String pFrage){
     frage = pFrage;
   }
-  public String getFrage {
-         return frage;
+  public String getFrage (){
+    return frage;
+  }
 }
-  
-}
-
