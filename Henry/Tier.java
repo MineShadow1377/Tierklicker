@@ -5,7 +5,7 @@ public class Tier {
   // Anfang Attribute
   public String Name;
   public String Eigenschaften;
-  public void Bild;
+  public String Bild;
   // Ende Attribute
   
   // Anfang Methoden
@@ -16,7 +16,7 @@ public class Tier {
   public String getEigenschaften() {
     return Eigenschaften;
   }
-  public void getBild() {
+  public String getBild() {
     return Bild;
   }
 
