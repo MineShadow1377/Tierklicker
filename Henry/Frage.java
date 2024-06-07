@@ -1,7 +1,6 @@
 public class Frage {
-  public String Name (String pName){
-         name = pName;
-    }
+  public String Name;
+  
   public String getName (){
          return name;
    }
