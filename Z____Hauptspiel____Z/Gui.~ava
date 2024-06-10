@@ -12,7 +12,6 @@ public class Gui extends JFrame {
   private JButton bNeustart = new JButton();
   private Baum spiel = new Baum();
   private JLabel l = new JLabel();
-  private JButton Falsch = new JButton();
   // Ende Attribute
   
   public Gui() { 
@@ -71,15 +70,6 @@ public class Gui extends JFrame {
     l.setBounds(48, 18, 174, 68);
     l.setText("...");
     cp.add(l);
-    Falsch.setBounds(161, 183, 75, 25);
-    Falsch.setText("Falsch");
-    Falsch.setMargin(new Insets(2, 2, 2, 2));
-    Falsch.addActionListener(new ActionListener() { 
-      public void actionPerformed(ActionEvent evt) { 
-        Falsch_ActionPerformed(evt);
-      }
-    });
-    cp.add(Falsch);
     // Ende Komponenten
     
     setVisible(true);
@@ -92,12 +82,12 @@ public class Gui extends JFrame {
   } 
   
   public void bNEIN_ActionPerformed(ActionEvent evt) {
-    spiel.nein();
+    Baum.nein();
     
   } 
 
   public void bJA_ActionPerformed(ActionEvent evt) {
-    spiel.ja();
+    Baum.ja();
     
   } 
 
@@ -112,11 +102,6 @@ public class Gui extends JFrame {
     textfeld.setText(spiel.gibInhalt());
     
   } // end of bNeustart_ActionPerformed
-
-  public void Falsch_ActionPerformed(ActionEvent evt) {
-    // TODO hier Quelltext einfügen
-    
-  } // end of Falsch_ActionPerformed
 
   // Ende Methoden
 } // end of class Gui

@@ -8,7 +8,7 @@ public abstract class Inhalt {
   
   // Anfang Methoden
   public Tier getTier() {
-    return null;
+    return Tier;
   }
 
   public Frage getFrage() {

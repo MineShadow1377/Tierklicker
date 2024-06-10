@@ -1,23 +1,28 @@
 
 
-public class Tier {
+public class Tier extends Inhalt {
+  
   
   // Anfang Attribute
-  public String Name;
-  public String Eigenschaften;
-  public void Bild;
+  public String name;
+  public String eigenschaften;
+  public String bild;
   // Ende Attribute
   
+  public Tier(String pTier){
+    istfrage=false;
+    name=pTier;
+    }
   // Anfang Methoden
   public String getName() {
-    return Name;
+    return name;
   }
 
   public String getEigenschaften() {
-    return Eigenschaften;
+    return eigenschaften;
   }
-  public void getBild() {
-    return Bild;
+  public String getBild() {
+    return bild;
   }
 
   // Ende Methoden

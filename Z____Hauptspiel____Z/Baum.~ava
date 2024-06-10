@@ -7,13 +7,6 @@ public class Baum {
     baum= new BinaryTree<Inhalt>(new Frage("Vegetarier?"),b3,b2);
   }
   public void neu(){
-    tmpbaum=baum;
+    
   }
-  public void ja(){
-    tmpbaum=tmpbaum.getRightTree();
-    }
-  
-  public void nein(){
-    tmpbaum=tmpbaum.getLeftTree();
-    }
 }
