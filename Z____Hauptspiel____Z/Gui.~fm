@@ -1,10 +1,10 @@
 object Gui: TFGUIForm
-  Left = 0
-  Top = 134
+  Left = -605
+  Top = 3
   BorderIcons = [biSystemMenu]
   Caption = 'Gui'
-  ClientHeight = 296
-  ClientWidth = 255
+  ClientHeight = 377
+  ClientWidth = 415
   Color = clBtnFace
   ParentFont = True
   FormStyle = fsStayOnTop
@@ -23,10 +23,10 @@ object Gui: TFGUIForm
   TextHeight = 13
   object bNEIN: TJButton
     Tag = 4
-    Left = 156
+    Left = 220
     Top = 90
-    Width = 75
-    Height = 25
+    Width = 171
+    Height = 57
     Hint = 'jButton2'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
@@ -69,8 +69,8 @@ object Gui: TFGUIForm
     Tag = 4
     Left = 34
     Top = 89
-    Width = 75
-    Height = 25
+    Width = 171
+    Height = 57
     Hint = 'jButton3'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
@@ -109,56 +109,12 @@ object Gui: TFGUIForm
     Border.MatteBottom = 0
     Border.MatteRight = 0
   end
-  object Richtig: TJButton
-    Tag = 4
-    Left = 36
-    Top = 180
-    Width = 75
-    Height = 25
-    Hint = 'jButton1'
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -12
-    Font.Name = 'Dialog'
-    Font.Style = [fsBold]
-    Foreground = 3355443
-    Background = 15658734
-    actionPerformed = 'Richtig_ActionPerformed'
-    Text = 'Richtig'
-    Mnemonic = 0
-    DisplayedMnemonicIndex = 0
-    Selected = False
-    BorderPainted = True
-    FocusPainted = False
-    ContentAreaFilled = True
-    HorizontalAlignment = CENTER
-    VerticalAlignment = CENTER
-    HorizontalTextPosition = RIGHT
-    VerticalTextPosition = CENTER
-    IconTextGap = 4
-    RolloverEnabled = False
-    Border.BorderType = NoBorder
-    Border.LineColor = clBlack
-    Border.LineThickness = 0
-    Border.LineRounded = False
-    Border.EtchHighlightColor = clBlack
-    Border.EtchShadowColor = clBlack
-    Border.Etchtype = 0
-    Border.BevelHighlightColor = clBlack
-    Border.BevelShadowColor = clBlack
-    Border.Beveltype = 0
-    Border.MatteColor = clBlack
-    Border.MatteTop = 0
-    Border.MatteLeft = 0
-    Border.MatteBottom = 0
-    Border.MatteRight = 0
-  end
   object bNeustart: TJButton
     Tag = 4
-    Left = 101
-    Top = 136
-    Width = 75
-    Height = 25
+    Left = 133
+    Top = 152
+    Width = 155
+    Height = 49
     Hint = 'jButton1'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
@@ -197,11 +153,11 @@ object Gui: TFGUIForm
     Border.MatteBottom = 0
     Border.MatteRight = 0
   end
-  object l: TJLabel
+  object textfeld: TJLabel
     Tag = 1
-    Left = 48
+    Left = 32
     Top = 18
-    Width = 174
+    Width = 358
     Height = 68
     Hint = 'jLabel1'
     Font.Charset = DEFAULT_CHARSET
@@ -222,8 +178,8 @@ object Gui: TFGUIForm
   end
   object Falsch: TJButton
     Tag = 4
-    Left = 161
-    Top = 183
+    Left = 177
+    Top = 207
     Width = 75
     Height = 25
     Hint = 'jButton1'
@@ -263,5 +219,133 @@ object Gui: TFGUIForm
     Border.MatteLeft = 0
     Border.MatteBottom = 0
     Border.MatteRight = 0
+  end
+  object Bestaetigen: TJButton
+    Tag = 4
+    Left = 188
+    Top = 316
+    Width = 75
+    Height = 25
+    Hint = 'jButton1'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = 'Dialog'
+    Font.Style = [fsBold]
+    Foreground = 3355443
+    Background = 15658734
+    actionPerformed = 'Bestaetigen_ActionPerformed'
+    Text = 'best'#228'tigen'
+    Mnemonic = 0
+    DisplayedMnemonicIndex = 0
+    Selected = False
+    BorderPainted = True
+    FocusPainted = False
+    ContentAreaFilled = True
+    HorizontalAlignment = CENTER
+    VerticalAlignment = CENTER
+    HorizontalTextPosition = RIGHT
+    VerticalTextPosition = CENTER
+    IconTextGap = 4
+    RolloverEnabled = False
+    Border.BorderType = NoBorder
+    Border.LineColor = clBlack
+    Border.LineThickness = 0
+    Border.LineRounded = False
+    Border.EtchHighlightColor = clBlack
+    Border.EtchShadowColor = clBlack
+    Border.Etchtype = 0
+    Border.BevelHighlightColor = clBlack
+    Border.BevelShadowColor = clBlack
+    Border.Beveltype = 0
+    Border.MatteColor = clBlack
+    Border.MatteTop = 0
+    Border.MatteLeft = 0
+    Border.MatteBottom = 0
+    Border.MatteRight = 0
+  end
+  object frage: TJTextField
+    Tag = 2
+    Left = 141
+    Top = 253
+    Width = 150
+    Height = 20
+    Cursor = crIBeam
+    Hint = 'jTextField1'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = 'Dialog'
+    Font.Style = []
+    Foreground = 3355443
+    Background = clWhite
+    HorizontalAlignment = LEFT
+    Text = ''
+    Editable = True
+  end
+  object tier: TJTextField
+    Tag = 2
+    Left = 144
+    Top = 282
+    Width = 150
+    Height = 20
+    Cursor = crIBeam
+    Hint = 'jTextField2'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = 'Dialog'
+    Font.Style = []
+    Foreground = 3355443
+    Background = clWhite
+    HorizontalAlignment = LEFT
+    Text = ''
+    Editable = True
+  end
+  object lFrage: TJLabel
+    Tag = 1
+    Left = 92
+    Top = 255
+    Width = 46
+    Height = 20
+    Hint = 'jLabel1'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = 'Dialog'
+    Font.Style = [fsBold]
+    Foreground = 3355443
+    Background = clBtnFace
+    Text = 'Frage'
+    HorizontalAlignment = LEFT
+    VerticalAlignment = CENTER
+    HorizontalTextPosition = RIGHT
+    VerticalTextPosition = CENTER
+    IconTextGap = 4
+    DisplayedMnemonic = 0
+    DisplayedMnemonicIndex = 0
+  end
+  object Hinweis2: TJLabel
+    Tag = 1
+    Left = 101
+    Top = 282
+    Width = 30
+    Height = 20
+    Hint = 'jLabel1'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = 'Dialog'
+    Font.Style = [fsBold]
+    Foreground = 3355443
+    Background = clBtnFace
+    Text = 'Tier'
+    HorizontalAlignment = LEFT
+    VerticalAlignment = CENTER
+    HorizontalTextPosition = RIGHT
+    VerticalTextPosition = CENTER
+    IconTextGap = 4
+    DisplayedMnemonic = 0
+    DisplayedMnemonicIndex = 0
   end
 end
