@@ -19,7 +19,7 @@ public class Baum {
   
   public String getWort(){
     if (tmpbaum.getContent().istFrage() == true){
-       Frage f = (Frage)tmpbaum.getContent();
+      Frage f = (Frage)tmpbaum.getContent();
       return f.getFrage();
     }
     else{
@@ -31,21 +31,32 @@ public class Baum {
   public void insert(String frage,String tier){
     Tier t =(Tier)tmpbaum.getContent();
     BinaryTree b1 = new BinaryTree<Inhalt>(new Frage(frage),new BinaryTree<Inhalt>(new Tier(tier)),new BinaryTree<Inhalt>(new Tier(t.getName())));
-    suchen(t,baum)
-    }
+    suchen(t,baum,b1);
+  }
   
-  private BinaryTree suchen(Tier b,){
-    if(!baum.isEmpty()){
-      String a=b.getName();
-      Tier t = (Tier)tmpbaum.getContent();
-      if(a.compareTo(t.getName())==0){
-      
-        }
-      baum.getLeftTree();
-      baum.getRightTree();
+  private void suchen(Tier b,BinaryTree<Inhalt> pbaum,BinaryTree<Inhalt> teilbaum){
+    if(!pbaum.isEmpty()){
+      String tName=b.getName();
+      if(pbaum.getLeftTree().getContent().istFrage()){
+        suchen(b,pbaum.getLeftTree(),teilbaum);
       }
-    else {
-      return baum; 
-    } // end of if-loop
-    }
+      if(pbaum.getRightTree().getContent().istFrage()){
+        suchen(b,pbaum.getRightTree(),teilbaum);
+      }
+      
+      if(!pbaum.getLeftTree().getContent().istFrage()){
+        Tier t = (Tier) pbaum.getLeftTree().getContent();
+        if(tName.compareTo(t.getName())==0){
+          pbaum.setLeftTree(teilbaum);     
+        }
+      }
+      
+      if(!pbaum.getRightTree().getContent().istFrage()){
+        Tier t = (Tier) pbaum.getRightTree().getContent();
+        if(tName.compareTo(t.getName())==0){
+          pbaum.setRightTree(teilbaum);     
+        }
+      }
+    }   
+  }
 }
