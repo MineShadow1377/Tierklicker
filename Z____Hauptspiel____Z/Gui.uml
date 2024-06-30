@@ -1,0 +1,32 @@
+﻿[Files]
+File0=..\..\..\..\Dokumente\GitHub\WassIschTier\Z____Hauptspiel____Z\Baum.java
+File1=..\..\..\..\Dokumente\GitHub\WassIschTier\Z____Hauptspiel____Z\BinaryTree$BTNode.class
+File2=..\..\..\..\Dokumente\GitHub\WassIschTier\Z____Hauptspiel____Z\BinaryTree.java
+File3=..\..\..\..\Dokumente\GitHub\WassIschTier\Z____Hauptspiel____Z\Gui.java
+
+[Box:  - Gui]
+X=20
+Y=40
+MinVis=0
+ShowParameter=4
+SortOrder=0
+ShowIcons=1
+FontSize=12
+FontName=Segoe UI
+
+[Diagram]
+comments=0
+OffsetX=0
+OffsetY=0
+Visibility=0
+ShowParameter=4
+SortOrder=0
+ShowIcons=1
+ShowConnections=0
+Fontname=Segoe UI
+Fontsize=12
+ShowObjectDiagram=0
+
+[Interactive]
+I0=
+

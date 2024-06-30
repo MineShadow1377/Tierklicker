@@ -1,20 +1,8 @@
 
 public abstract class Inhalt {
-  
-  // Anfang Attribute
-  private Tier Tier;
-  private Frage Frage;
-  // Ende Attribute
-  
-  // Anfang Methoden
-  public Tier getTier() {
-    return null;
-  }
-
-  public Frage getFrage() {
-    return Frage;
-  }
-
-  // Ende Methoden
+  boolean istfrage;
+  public boolean istFrage(){
+    return istfrage;
+    }
 } // end of Inhalt
 
